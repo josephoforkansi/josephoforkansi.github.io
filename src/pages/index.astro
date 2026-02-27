@@ -1,14 +1,128 @@
 ---
+import Layout from '../layouts/Layout.astro';
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+
+<Layout title="Joseph Oforkansi - Embedded Systems Engineer">
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Joseph Oforkansi</h1>
+      <h2>Embedded Systems Engineer | Firmware | Hardware | Integration</h2>
+      <p>Building reliable, real-time systems from concept to production.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Passionate about embedded systems, firmware development, and hardware-software integration. 
+        Experience with microcontrollers, RTOS, sensors, and communication protocols.
+      </p>
+      <a href="#experience" class="btn secondary">See Experience</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">C / C++</div>
+        <div class="skill-card">Embedded Linux</div>
+        <div class="skill-card">RTOS</div>
+        <div class="skill-card">ARM Cortex</div>
+        <div class="skill-card">I2C / SPI / UART</div>
+        <div class="skill-card">PCB Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2022 – Present</div>
+          <div class="timeline-content">
+            <h3>Embedded Firmware Engineer</h3>
+            <p>Company / Role</p>
+            <ul>
+              <li>Real-time firmware development</li>
+              <li>Sensor and protocol integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Recent embedded projects — details coming soon.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>LinkedIn / GitHub links here</p>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  :root {
+    --bg: #0a0a15;
+    --text: #e0e0ff;
+    --accent: #00d4ff;
+    --gray: #b0b0d0;
+  }
+
+  .hero {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #0f0f1a, var(--bg));
+  }
+
+  h1 { font-size: 4rem; margin: 0; color: white; }
+  h2 { font-size: 2.2rem; margin: 1rem 0; color: var(--accent); }
+  p { max-width: 700px; margin: 1rem auto; color: var(--gray); }
+
+  .btn {
+    padding: 1rem 2rem;
+    background: var(--accent);
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .section { padding: 5rem 1rem; text-align: center; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .skill-card {
+    background: #1e1e38;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+    text-align: center;
+  }
+</style>
