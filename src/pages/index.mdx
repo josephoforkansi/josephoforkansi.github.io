@@ -1,10 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
+
 ---
+
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Projects.astro'
 
 <Layout title="Joseph Oforkansi - Embedded Systems Engineer">
 
-  <!-- Hero -->
+  {/* Home */}
+  
   <section id="home" class="hero">
     <div class="container">
       <h1>Joseph Oforkansi</h1>
@@ -14,7 +18,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- About -->
+  {/* About */}
+
   <section id="about" class="section">
     <div class="container">
       <h2>About Me</h2>
@@ -26,7 +31,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Skills -->
+  {/* Skills */}
+  
   <section id="skills" class="section">
     <div class="container">
       <h2>Skills</h2>
@@ -41,7 +47,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Experience -->
+  {/* Experience */} 
+
   <section id="experience" class="section">
     <div class="container">
       <h2>Experience</h2>
@@ -61,15 +68,48 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Projects -->
+  {/* Projects */}
+
   <section id="projects" class="section">
-    <div class="container">
       <h2>Projects</h2>
       <p>Recent embedded projects — details coming soon.</p>
-    </div>
+      <div class = "thirds__grid_container">
+      <Project name = "Ipsum" img = "/img/placeholder.png">
+        * Some
+        * Bullet
+        * Points
+      </Project>
+      <Project name = "Lorem" img = "/img/placeholder.png">
+        * Some
+        * Bullet
+        * Points
+      </Project>
+      <Project name = "Dolor" img = "/img/placeholder.png">
+        Lorem ipsum project description. I did this because I wanted to and the money was right.
+        * Some
+        * Bullet
+        * Points
+      </Project>
+      <Project name = "Ipsum" img = "/img/placeholder.png">
+        * Some
+        * Bullet
+        * Points
+      </Project>
+      <Project name = "Lorem" img = "/img/placeholder.png">
+        * Some
+        * Bullet
+        * Points
+      </Project>
+      <Project name = "Dolor" img = "/img/placeholder.png">
+        * Some
+        * Bullet
+        * Points
+      </Project>
+      </div>
   </section>
 
-  <!-- Contact -->
+  {/* Contact */}
+
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
@@ -79,50 +119,3 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
 </Layout>
-
-<style>
-  :root {
-    --bg: #0a0a15;
-    --text: #e0e0ff;
-    --accent: #00d4ff;
-    --gray: #b0b0d0;
-  }
-
-  .hero {
-    min-height: 80vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background: linear-gradient(to bottom, #0f0f1a, var(--bg));
-  }
-
-  h1 { font-size: 4rem; margin: 0; color: white; }
-  h2 { font-size: 2.2rem; margin: 1rem 0; color: var(--accent); }
-  p { max-width: 700px; margin: 1rem auto; color: var(--gray); }
-
-  .btn {
-    padding: 1rem 2rem;
-    background: var(--accent);
-    color: black;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .section { padding: 5rem 1rem; text-align: center; }
-
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
-
-  .skill-card {
-    background: #1e1e38;
-    padding: 1.2rem;
-    border-radius: 8px;
-    border: 1px solid var(--accent);
-    text-align: center;
-  }
-</style>
