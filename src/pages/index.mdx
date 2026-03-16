@@ -1,123 +1,145 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Projects.astro";
+import Skill from "../components/Skills.astro";
 ---
-
-import Layout from '../layouts/Layout.astro';
-import Project from '../components/Projects.astro';
-import Skill from '../components/Skill.astro';
 
 <Layout title="Joseph Oforkansi - Embedded Systems Engineer">
 
-  {/* Home */}
-  
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Joseph Oforkansi</h1>
-      <h2>Embedded Systems Engineer | Firmware | Hardware | Integration</h2>
-      <p>Building reliable, real-time systems from concept to production.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Joseph Oforkansi</h1>
+    <h2>Embedded Systems Engineer | Firmware | Hardware | Integration</h2>
+    <p>Building reliable, real-time systems from concept to production.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+</section>
+
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <p>
+      Passionate about embedded systems, firmware development, and hardware-software integration.
+      Experience with microcontrollers, RTOS, sensors, and communication protocols.
+    </p>
+
+    <a href="/about" class="btn secondary">See Experience</a>
+  </div>
+</section>
+
+
+<section id="skills" class="section">
+  <div class="container">
+
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+      <Skill name="Python" icon="devicon-python-plain colored" />
+      <Skill name="C / C++" icon="devicon-cplusplus-plain colored" />
+      <Skill name="Embedded Linux" icon="devicon-linux-plain colored" />
+      <Skill name="RTOS" icon="devicon-c-plain colored" />
+      <Skill name="ARM Cortex" icon="devicon-arm-plain colored" />
+      <Skill name="I2C / SPI / UART" icon="devicon-arduino-plain colored" />
+      <Skill name="PCB Design" icon="devicon-electron-original colored" />
+
     </div>
-  </section>
 
-  {/* About */}
+  </div>
+</section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Passionate about embedded systems, firmware development, and hardware-software integration. 
-        Experience with microcontrollers, RTOS, sensors, and communication protocols.
-      </p>
-      <a href="#experience" class="btn secondary">See Experience</a>
-    </div>
-  </section>
 
-  {/* Skills */}
-  
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <Skill name = "Python"/>
-        <Skill name = "C / C++" />
-        <div class="skill-card">Embedded Linux</div>
-        <div class="skill-card">RTOS</div>
-        <div class="skill-card">ARM Cortex</div>
-        <div class="skill-card">I2C / SPI / UART</div>
-        <div class="skill-card">PCB Design</div>
-      </div>
-    </div>
-  </section>
+<section id="experience" class="section">
+  <div class="container">
 
-  {/* Experience */} 
+    <h2>Experience</h2>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2022 – Present</div>
-          <div class="timeline-content">
-            <h3>Embedded Firmware Engineer</h3>
-            <p>Company / Role</p>
-            <ul>
-              <li>Real-time firmware development</li>
-              <li>Sensor and protocol integration</li>
-            </ul>
-          </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <div class="timeline-date">
+          2022 – Present
         </div>
+
+        <div class="timeline-content">
+
+          <h3>Embedded Firmware Engineer</h3>
+          <p>Company / Role</p>
+
+          <ul>
+            <li>Real-time firmware development</li>
+            <li>Sensor and protocol integration</li>
+          </ul>
+
+        </div>
+
       </div>
+
     </div>
-  </section>
 
-  {/* Projects */}
+  </div>
+</section>
 
-  <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p>Recent embedded projects — details coming soon.</p>
-      <div class = "thirds__grid_container">
-      <Project name = "Ipsum" img = "/img/placeholder.png">
-        * Some
-        * Bullet
-        * Points
-      </Project>
-      <Project name = "Lorem" img = "/img/placeholder.png">
-        * Some
-        * Bullet
-        * Points
-      </Project>
-      <Project name = "Dolor" img = "/img/placeholder.png">
-        Lorem ipsum project description. I did this because I wanted to and the money was right.
-        * Some
-        * Bullet
-        * Points
-      </Project>
-      <Project name = "Ipsum" img = "/img/placeholder.png">
-        * Some
-        * Bullet
-        * Points
-      </Project>
-      <Project name = "Lorem" img = "/img/placeholder.png">
-        * Some
-        * Bullet
-        * Points
-      </Project>
-      <Project name = "Dolor" img = "/img/placeholder.png">
-        * Some
-        * Bullet
-        * Points
-      </Project>
-      </div>
-  </section>
 
-  {/* Contact */}
+<section id="projects" class="section">
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-      <p>LinkedIn / GitHub links here</p>
+  <div class="container">
+
+    <h2>Projects</h2>
+    <p>Recent embedded projects — details coming soon.</p>
+
+    <div class="thirds__grid_container">
+
+      <Project name="Ipsum" img="/img/placeholder.png">
+        <ul>
+          <li>Some</li>
+          <li>Bullet</li>
+          <li>Points</li>
+        </ul>
+      </Project>
+
+      <Project name="Lorem" img="/img/placeholder.png">
+        <ul>
+          <li>Some</li>
+          <li>Bullet</li>
+          <li>Points</li>
+        </ul>
+      </Project>
+
+      <Project name="Dolor" img="/img/placeholder.png">
+        <p>Lorem ipsum project description.</p>
+        <ul>
+          <li>Some</li>
+          <li>Bullet</li>
+          <li>Points</li>
+        </ul>
+      </Project>
+
     </div>
-  </section>
+
+  </div>
+
+</section>
+
+
+<section id="contact" class="section">
+  <div class="container">
+
+    <h2>Contact</h2>
+
+    <p>
+      Email:
+      <a href="mailto:your@email.com">your@email.com</a>
+    </p>
+
+    <p>
+      LinkedIn / GitHub links here
+    </p>
+
+  </div>
+</section>
 
 </Layout>

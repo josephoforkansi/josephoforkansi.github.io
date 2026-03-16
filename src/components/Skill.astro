@@ -1,4 +1,8 @@
 ---
-const {name} = Astro.props;
+const { name, icon } = Astro.props;
 ---
-<div class="skill-card">{name}</div>
+
+<div class="skill-card">
+  <i class={icon}></i>
+  <span>{name}</span>
+</div>
