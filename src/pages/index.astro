@@ -39,7 +39,7 @@ import Skill from "../components/Skill.astro";
 
       <Skill name="Python" icon="devicon-python-plain colored" />
       <Skill name="C / C++" icon="devicon-cplusplus-plain colored" />
-      <Skill name="Embedded3 Linux" icon="devicon-linux-plain colored" />
+      <Skill name="Embedded Linux" icon="devicon-linux-plain colored" />
       <Skill name="RTOS" icon="devicon-c-plain colored" />
       <Skill name="ARM Cortex" icon="devicon-arm-plain colored" />
       <Skill name="I2C / SPI / UART" icon="devicon-arduino-plain colored" />
@@ -130,17 +130,47 @@ import Skill from "../components/Skill.astro";
 
     <h2>Contact</h2>
 
-    <p class = "grid__social_icons">
+    <div class="grid__social_icons">
+
       <a href="https://www.linkedin.com/in/joseph-oforkansi-5a3049313/" target="_blank">
-         <i class="devicon-linkedin-plain-wordmark"></i>
+        <i class="devicon-linkedin-plain"></i>
       </a>
 
       <a href="https://github.com/josephoforkansi" target="_blank">
-         <i class="devicon-github-original-wordmark"></i>
+        <i class="devicon-github-original"></i>
       </a>
-    </p>
+
+    </div>
 
   </div>
 </section>
 
 </Layout>
+
+
+<style>
+
+.grid__social_icons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  margin-top:25px;
+}
+
+.grid__social_icons a{
+  text-decoration:none;
+}
+
+.grid__social_icons i{
+  font-size:70px;
+  color:#00d4ff;
+  transition:all 0.2s ease;
+}
+
+.grid__social_icons i:hover{
+  transform:scale(1.15);
+  color:white;
+}
+
+</style>
