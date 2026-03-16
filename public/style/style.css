@@ -109,3 +109,17 @@
   .thirds__grid_projects img {
     width: 100%;
   }
+
+  .grid__social_icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 1rem;
+    width: 4rem;
+    margin: 0 auto;
+  }
+
+  .grid__social_icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 48pt;
+  }
