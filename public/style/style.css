@@ -176,6 +176,32 @@ th, td {
     transition: .4s;
 }
 
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.image-slider ul {
+    height: 100%;
+    padding: 0;
+    width: 95vw;
+    list-style-type: nowrap;
+}
+
+.image-slider li {
+    height: 100%;
+    display: inline-block;
+    margin: 0 3rem 0 0;
+}
+
+.image-slider img {
+    width: calc(95vw / 3 - 2rem);
+    height: auto;
+    transition: ls cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 input:checked + .slider {
     background: var(--webco-color-purple-bg);
 }
